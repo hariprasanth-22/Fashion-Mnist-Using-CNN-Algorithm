@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        img {
+            margin: 20px;
+            max-height: 300px;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    <p><strong>Prediction:</strong> {{ predicted_class }}</p>
+    <a href="/">Classify Another Image</a>
+</body>
+</html>
